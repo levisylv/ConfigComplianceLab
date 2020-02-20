@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://workshop.aws-management.tools/config/ -->
+<html class="js supports csstransforms3d" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta property="og:title" content="AWS Management Tools Workshop">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://workshop.aws-management.tools">
+    <meta property="og:image" content="https://workshop.aws-management.tools/ogimage.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.55.6">
+    <meta name="description" content="Some description">
+
+
+    <link rel="shortcut icon" href="https://workshop.aws-management.tools/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://workshop.aws-management.tools/images/favicon.ico" type="image/x-icon">
+
+    <title>Config :: AWS Management Tools Workshop</title>
+
+    
+    <link href="./Config __ AWS Management Tools Workshop_files/nucleus.css" rel="stylesheet">
+    <link href="./Config __ AWS Management Tools Workshop_files/fontawesome-all.min.css" rel="stylesheet">
+    <link href="./Config __ AWS Management Tools Workshop_files/hybrid.css" rel="stylesheet">
+    <link href="./Config __ AWS Management Tools Workshop_files/featherlight.min.css" rel="stylesheet">
+    <link href="./Config __ AWS Management Tools Workshop_files/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="./Config __ AWS Management Tools Workshop_files/auto-complete.css" rel="stylesheet">
+    <link href="./Config __ AWS Management Tools Workshop_files/theme.css" rel="stylesheet">
+    <link href="./Config __ AWS Management Tools Workshop_files/hugo-theme.css" rel="stylesheet">
+    <link href="./Config __ AWS Management Tools Workshop_files/jquery-ui.min.css" rel="stylesheet">
+    
+      <link href="./Config __ AWS Management Tools Workshop_files/theme-mine.css" rel="stylesheet">
+    
+
+    <script src="./Config __ AWS Management Tools Workshop_files/jquery-3.3.1.min.js"></script>
+    <script src="./Config __ AWS Management Tools Workshop_files/jquery-ui-1.12.1.min.js"></script>
+
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + .copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/config/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="https://workshop.aws-management.tools/" title="Go home"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" width="60%" style="padding:20px 0px;"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input="" id="search-by" type="search" placeholder="Search..." autocomplete="off">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="./Config __ AWS Management Tools Workshop_files/lunr.min.js"></script>
+<script type="text/javascript" src="./Config __ AWS Management Tools Workshop_files/auto-complete.js"></script>
+<script type="text/javascript">
+    
+        var baseurl = "";
+    
+</script>
+<script type="text/javascript" src="./Config __ AWS Management Tools Workshop_files/search.js"></script>
+
+    
+  </div>
+
+    <div class="highlightable ps-container ps-theme-default ps-active-y" data-ps-id="8e6194a2-7816-76f0-35b1-5cad3a50eec7" style="height: 462.734px;">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/ssm/" title="System Manager" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://workshop.aws-management.tools/ssm/">
+          System Manager
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ssm/setup/" title="Setup" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/ssm/setup/">
+        Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ssm/inventory/" title="Inventory" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/ssm/inventory/">
+        Inventory
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ssm/statemgr/" title="State Manager" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/ssm/statemgr/">
+        State Manager
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ssm/patch/" title="Patch Manager" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/ssm/patch/">
+        Patch Manager
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/ssm/maintwindow/" title="Maintenance Window" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/ssm/maintwindow/">
+        Maintenance Window
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cloudwatch/" title="CloudWatch" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://workshop.aws-management.tools/cloudwatch/">
+          CloudWatch
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudwatch/setup/" title="Setup" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudwatch/setup/">
+        Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudwatch/narrative/" title="Narrative" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudwatch/narrative/">
+        Narrative
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudwatch/collectdata/" title="Collect telemetry" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudwatch/collectdata/">
+        Collect telemetry
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudwatch/metricsfromlogs/" title="Generate metrics from logs" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudwatch/metricsfromlogs/">
+        Generate metrics from logs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudwatch/alarms/" title="Create alarms" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudwatch/alarms/">
+        Create alarms
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudwatch/automatedresponse/" title="Automate responses" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudwatch/automatedresponse/">
+        Automate responses
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudwatch/cleanup/" title="Clean Up" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudwatch/cleanup/">
+        Clean Up
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/config/" title="Config" class="dd-item parent active visited">
+      <a href="https://workshop.aws-management.tools/config/">
+          Config
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/config/setup/" title="Setup" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/config/setup/">
+        Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/config/configrule/" title="Config Rule" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/config/configrule/">
+        Config Rule
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cloudformation/" title="CloudFormation" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://workshop.aws-management.tools/cloudformation/">
+          CloudFormation
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudformation/customresource/" title="Custom Resources" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudformation/customresource/">
+        Custom Resources
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudformation/mappingstacksets/" title="Mapping and StackSets" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudformation/mappingstacksets/">
+        Mapping and StackSets
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cloudformation/driftdetect/" title="Drift Detection" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/cloudformation/driftdetect/">
+        Drift Detection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/servicecatalog/" title="Service Catalog" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://workshop.aws-management.tools/servicecatalog/">
+          Service Catalog
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/servicecatalog/deploy/" title="Deploy a Product" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/servicecatalog/deploy/">
+        Deploy a Product
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/servicecatalog/serviceactions/" title="Service Actions" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/servicecatalog/serviceactions/">
+        Service Actions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/xray/" title="X-Ray" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://workshop.aws-management.tools/xray/">
+          X-Ray
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/xray/setup/" title="Setup" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/xray/setup/">
+        Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/xray/exploreapp/" title="Explore Application" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/xray/exploreapp/">
+        Explore Application
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/operations/" title="Operations" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://workshop.aws-management.tools/operations/">
+          Operations
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/setup/" title="Setup" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/setup/">
+        Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/operations/prevent/" title="Prevent" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://workshop.aws-management.tools/operations/prevent/">
+          Prevent
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/prevent/trustedadvisor/" title="Trusted Advisor" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/prevent/trustedadvisor/">
+        Trusted Advisor
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/prevent/inventory/" title="Systems Manager Inventory" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/prevent/inventory/">
+        Systems Manager Inventory
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/prevent/patching/" title="Systems Manager Patching" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/prevent/patching/">
+        Systems Manager Patching
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/prevent/installcloudwatch/" title="Install Cloudwatch" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/prevent/installcloudwatch/">
+        Install Cloudwatch
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/prevent/xray/" title="Tracing with X-Ray" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/prevent/xray/">
+        Tracing with X-Ray
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/prevent/conclusion/" title="Conclusion" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/prevent/conclusion/">
+        Conclusion
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/prevent/other/" title="Other Activities" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/prevent/other/">
+        Other Activities
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/operations/detect/" title="Detect" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://workshop.aws-management.tools/operations/detect/">
+          Detect
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/detect/guardduty/" title="GuardDuty &amp; Session Manager" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/detect/guardduty/">
+        GuardDuty &amp; Session Manager
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/detect/drift/" title="Drift Detection" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/detect/drift/">
+        Drift Detection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/detect/anomaly/" title="Anomaly Detection" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/detect/anomaly/">
+        Anomaly Detection
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/detect/synthetics/" title="Synthetic Monitoring" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/detect/synthetics/">
+        Synthetic Monitoring
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/detect/conclusion/" title="Conclusion" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/detect/conclusion/">
+        Conclusion
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/operations/respond/" title="Respond" class="dd-item 
+        
+        
+        
+        ">
+      <a href="https://workshop.aws-management.tools/operations/respond/">
+          Respond
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/respond/identify/" title="Identify Issues" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/respond/identify/">
+        Identify Issues
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/respond/troubleshoot/" title="Troubleshoot" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/respond/troubleshoot/">
+        Troubleshoot
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/respond/respond/" title="Alert and Automate" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/respond/respond/">
+        Alert and Automate
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/respond/validate/" title="Validate" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/respond/validate/">
+        Validate
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/respond/conclusion/" title="Conclusion" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/respond/conclusion/">
+        Conclusion
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/operations/cleanup/" title="Lab Cleanup" class="dd-item ">
+        <a href="https://workshop.aws-management.tools/operations/cleanup/">
+        Lab Cleanup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <left>
+
+    
+    
+    <h5 class="copyright">© 2019 Amazon Web Services, Inc. or its Affiliates. All rights reserved.</h5><h5>
+
+
+
+<script async="" defer="" src="./Config __ AWS Management Tools Workshop_files/buttons.js"></script>
+
+    </h5></left></section>
+  <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px; height: 463px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 386px;"></div></div></div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar-sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 48px;"><div id="top-bar" style="width: 534px; position: fixed; top: 0px; z-index: 1000;">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="https://workshop.aws-management.tools/config/#" id="sidebar-toggle" data-sidebar-toggle="" class="highlight">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            <a href="https://workshop.aws-management.tools/" class="highlight"></a> &gt; Config
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress" style="display: none; opacity: 1;">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="https://workshop.aws-management.tools/config/#introduction" class="highlight">Introduction</a></li>
+<li><a href="https://workshop.aws-management.tools/config/#labs" class="highlight">Labs</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div></div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Config</h1>
+          
+
+        
+
+
+
+	
+
+<h4 id="introduction">Introduction <span class="anchor" data-clipboard-text="https://workshop.aws-management.tools/config/#introduction"><i class="fas fa-link fa-lg"></i></span></h4>
+
+<p>AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. Config continuously monitors and records your AWS resource configurations and allows you to automate the evaluation of recorded configurations against desired configurations. With Config, you can review changes in configurations and relationships between AWS resources, dive into detailed resource configuration histories, and determine your overall compliance against the configurations specified in your internal guidelines.</p>
+
+<p>In this lab, we will enforce compliance by creating Config Rules, and create State Manager Associations to ensure we have the components we need in place.</p>
+
+<h4 id="labs">Labs <span class="anchor" data-clipboard-text="https://workshop.aws-management.tools/config/#labs"><i class="fas fa-link fa-lg"></i></span></h4>
+
+<p><a href="https://workshop.aws-management.tools/config/setup" class="highlight">Setup</a></p>
+
+<p><a href="https://workshop.aws-management.tools/config/configrule" class="highlight">Config Rules</a></p>
+
+
+
+
+
+<footer class=" footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+        
+            <a class="nav nav-prev" href="https://workshop.aws-management.tools/cloudwatch/cleanup/" title="Clean Up"> <i class="fas fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="https://workshop.aws-management.tools/config/setup/" title="Setup" style="margin-right: 0px;"><i class="fas fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="./Config __ AWS Management Tools Workshop_files/clipboard.min.js"></script>
+    <script src="./Config __ AWS Management Tools Workshop_files/perfect-scrollbar.min.js"></script>
+    <script src="./Config __ AWS Management Tools Workshop_files/perfect-scrollbar.jquery.min.js"></script>
+    <script src="./Config __ AWS Management Tools Workshop_files/jquery.sticky.js"></script>
+    <script src="./Config __ AWS Management Tools Workshop_files/featherlight.min.js"></script>
+    <script src="./Config __ AWS Management Tools Workshop_files/html5shiv-printshiv.min.js"></script>
+    <script src="./Config __ AWS Management Tools Workshop_files/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="./Config __ AWS Management Tools Workshop_files/modernizr.custom-3.6.0.js"></script>
+    <script src="./Config __ AWS Management Tools Workshop_files/learn.js"></script>
+    <script src="./Config __ AWS Management Tools Workshop_files/hugo-learn.js"></script>
+
+    <link href="./Config __ AWS Management Tools Workshop_files/mermaid.css" type="text/css" rel="stylesheet">
+    <script src="./Config __ AWS Management Tools Workshop_files/mermaid.min.js"></script>
+    <script>
+	var config = {
+        startOnLoad:true,
+        flowchart:{
+	    curve:'basis'
+        }
+      };
+        mermaid.initialize(config);
+    </script>
+    
+
+  
+
+<div class="autocomplete-suggestions "></div></body></html>
